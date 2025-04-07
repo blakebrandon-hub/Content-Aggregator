@@ -28,10 +28,22 @@ A Django-based web application that collects and displays articles from multiple
 
 ## 🔧 Setup Instructions
 
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/blakebrandon-hub/Content-Aggregator.git
-   cd Content-Aggregator
+# Clone the repository
+git clone https://github.com/blakebrandon-hub/Content-Aggregator.git
+cd Content-Aggregator
+
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run migrations
+python manage.py migrate
+
+# Start the development server
+python manage.py runserver
 
 
 
