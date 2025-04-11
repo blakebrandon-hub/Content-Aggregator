@@ -16,8 +16,7 @@ A Django-based web application that collects and displays articles from multiple
 
 - **Backend:** Django, Python
 - **Scraping:** BeautifulSoup, Requests
-- **Frontend:** HTML, CSS, Bootstrap (optional)
-- **Database:** SQLite (for local testing)
+- **Frontend:** HTML, CSS, Bootstrap
 
 ## 🧪 How It Works
 
@@ -33,8 +32,9 @@ git clone https://github.com/blakebrandon-hub/Content-Aggregator.git
 cd Content-Aggregator
 
 ### Create and activate a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
+Mac: python -m venv venv
+source venv/bin/activate  
+Windows: venv\Scripts\activate
 
 ### Install dependencies
 pip install -r requirements.txt
