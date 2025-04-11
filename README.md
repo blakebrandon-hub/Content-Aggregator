@@ -2,7 +2,7 @@
 
 <img src='https://user-images.githubusercontent.com/50201165/113705217-03ea2400-9692-11eb-84b2-f04e8c759209.jpg' width='400' height='300'>
 
-A Django-based web application that collects and displays articles from multiple developer-focused sources. This project demonstrates web scraping, data aggregation, and clean presentation in a single-page web app.
+A Django-based web application that collects and displays articles from multiple sources. This project demonstrates web scraping, data aggregation, and clean presentation in a single-page web app.
 
 ## 🌟 Features
 
