@@ -62,7 +62,11 @@ def index(request):
 
     for i in range(posts_num):
         srcset = giz_images[i].get('srcset', '')
-        image = re.split(', ', srcset)[i][:-5] if srcset else giz_images[i].get('src') # find highest quality image in srcset
+        if srcset:
+            # Get the last (highest resolution) image from the srcset
+            image = srcset.split(',')[-1].strip().split()[0]
+        else:
+            image = giz_images[i].get('src')
         posts.append({
             'title': giz_images[i].get('alt', '')[17:],  # skip 'Image for article: '
             'url': giz_url,
